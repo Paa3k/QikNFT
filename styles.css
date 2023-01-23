@@ -1,0 +1,213 @@
+/* General*/
+p{
+    margin: 0;
+}
+
+button{
+    border: none;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFEFD !important;
+}
+
+.text-quicksand{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text-dm_mono{
+    font-family: 'DM Mono', monospace;
+}
+
+.text-light{
+    color: #000 !important;
+}
+
+.general_padding{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+/* Navbar Stylings  */
+.connect_btn{
+    background: linear-gradient(98.62deg, #FFAC30 -27.91%, #FD01A7 102.96%);
+    border-radius: 10px;
+    color: white !important;
+    height: 50px;
+}
+
+
+/* Hero section*/
+.collect_super{
+    font-weight: 500;
+    font-size: 4.3rem;
+    line-height: 1.3;
+    letter-spacing: 0.005em;
+}
+
+.followers p{
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    line-height: 30px;
+}
+
+.followers p:first-of-type{
+    font-size: 1.5rem;
+}
+
+.followers p:last-of-type{
+    font-size: 1.2rem;
+    opacity: 60%;
+}
+
+.second_ape{
+    left: -8%;
+    bottom: 5%;
+    z-index: -10;
+}
+
+/* Sponsor section  */
+.sponsors{
+    margin: 7% 0;
+}
+
+.sponsors img{
+    filter: brightness(0) saturate(100%) invert(16%) sepia(23%) saturate(6670%) hue-rotate(279deg) brightness(75%) contrast(70%);
+}
+
+ /* Nft marketplace*/
+ .nft_marketplace{
+    margin: 7% 0;
+ }
+
+ .tabs .nav-item{
+    background: rgba(55, 55, 55, 0.3) !important;
+    border-radius: 8px !important;
+ }
+
+ .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: linear-gradient(98.62deg, rgba(255, 172, 48, 0.3) -27.91%, rgba(253, 1, 167, 0.3) 102.96%) !important;
+    border-radius: 8px;
+}
+
+.tabs a{
+    font-family:  'Quicksand', sans-serif;
+    font-size: 1rem;
+    color:#FD01A7 ;
+}
+
+.tabs a:active{
+     color:#000 !important;
+ }
+
+ .nft_cards{
+    margin: 5% 0;
+ }
+
+ .nft_cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+ }
+
+ .nft_card{
+    background: rgba(55, 55, 55, 0.3);
+    backdrop-filter: blur(11.5059px);
+    border-radius: 28.7648px;
+    padding: 2%;
+ }
+
+ .nft_card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+ }
+
+ .current_bid{
+    opacity: 20%;
+ }
+
+ .current_bid, .nft_price{
+    font-size: 0.85rem;
+ }
+
+ .view_more{
+    background: rgba(55, 55, 55, 0.3);
+    border-radius: 8px;
+ }
+
+ /* NFT creator */
+ .nft_step{
+    background: rgba(55, 55, 55, 0.3);
+    border-radius: 20px;
+    padding: 6% 2%;
+ }
+
+ .nft_step h6{
+    font-weight: 600;
+    font-size: 1.2rem;
+ }
+
+ .nft_step p{
+    font-weight: 400;
+ }
+
+.steps_cta button{
+    width: 150px;
+    font-weight: 500 !important;
+    border-radius: 10px !important;
+    height: 50px;
+    color: #FFFEFD;
+}
+
+ .steps_cta button:first-of-type{
+    background: linear-gradient(98.62deg, #FFAC30 -27.91%, #FD01A7 102.96%) !important;
+ }
+
+ .steps_cta button:last-of-type{
+    background-color: transparent;
+    border: 1px solid rgb(254, 1, 170,0.85);
+ }
+
+ /* Nft creators  */
+ .nft_creator{
+    background: rgba(55, 55, 55, 0.3);
+    padding: 1% 10px;
+ }
+
+ .nft_creator p{
+    white-space: nowrap;
+ }
+
+
+ /* Join*/
+ .join_community{
+    background: rgba(55, 55, 55, 0.3);
+    padding: 7% 0;
+    margin: 5% 0;
+ }
+
+ .join_community button{
+    background: linear-gradient(98.62deg, #FFAC30 -27.91%, #FD01A7 102.96%);
+    border-radius: 10px;
+    height: 50px;
+    color: #fff !important;
+ }
+
+ /* Footer*/
+ footer li{
+    margin: 3px 0;
+ }
+
+ footer a{
+    font-weight: 400;
+ }
+
+ footer i{
+    color: rgb(254, 1, 170,0.65);
+ }

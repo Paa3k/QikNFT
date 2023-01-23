@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QikNFT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-secondary text-dm_mono">
+
+    <!-- Nav Bar section  -->
+    <nav class="navbar navbar-expand-lg bg-light py-5 general_padding">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo_icon.svg" alt="QikNFT icon">
+                <span class="text-light text-quicksand fw-bold">
+                    QikNFT
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-space-between" id="navbarSupportedContent">
+                <div></div>
+            <ul class="navbar-nav  mx-auto mb-2 mb-lg-0 gap-4">
+                <li class="nav-item ">
+                <a class="nav-link text-light active" aria-current="page" href="#">Explore</a>
+                </li>
+                <li class="nav-item ">
+                <a class="nav-link text-light" href="#">Stats</a>
+                </li>
+                <li class="nav-item ">
+                <a class="nav-link text-light" href="#">Resources</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light" href="#">Artist</a>
+                </li>
+                <li class="nav-item ">
+                <a class="nav-link text-light" href="#">Create</a>
+                </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+                <button class=" connect_btn" type="submit"><a href="connectwallet.html">Connect Wallet</a></button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section  -->
+    <div class="hero_section my-5 general_padding">
+        <div class="row align-items-center text-light">
+            <div class="col">
+                <h1 class="collect_super">Collect Super Unique Digital Artworks </h1>
+                <p class=" mt-4 mb-5 text-quicksand w-75">QikNFT is the world’s largest NFT marketplace with over 45 thousand artist.</p>
+                <div class="d-flex gap-4">
+                    <div class="followers">
+                        <p>100K +</p>
+                        <p>Artwork</p>
+                    </div>
+                    <div class="followers">
+                        <p>78K +</p>
+                        <p>Artist</p>
+                    </div>
+                    <div class="followers">
+                        <p>60K +</p>
+                        <p>Auction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col position-relative text-center">
+                <img src="Images/hero_image1.svg" alt="first ape image" class="first_ape" >
+                <img src="Images/hero_image2.svg" alt="second ape image" class="second_ape position-absolute">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sponsors -->
+    <div class="sponsors general_padding d-flex text-light">
+        <div class="col">
+            <img src="Images/bitgo.svg" alt="">
+        </div>
+        <div class="col">
+            <img src="Images/trezor.svg" alt="" class="trez">
+        </div>
+        <div class="col">
+            <img src="Images/exodus.svg" alt="">
+        </div>
+        <div class="col">
+            <img src="Images/binance.svg" alt="">
+        </div>
+    </div>
+
+<!-- Spotlight -->
+    <div class="general_padding nft_marketplace text-light">
+        <div class="text-center text-quicksand">
+            <p>NFT Marketplace</p>
+            <h4 class="my-3">Spotlight: Projects You Would Love</h4>
+        </div>
+
+        <div class="tabs my-5">
+            <ul class="nav nav-pills nav-fill gap-3">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Music</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Art</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sport</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Virtual reality</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Videos</a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#">More</a>
+                </li>
+            </ul>
+
+            <div class="nft_cards row gap-5 justify-content-center">
+                <div class="col-3 nft_card">
+                    <div>
+                        <img src="Images/nft1.svg" alt="NFT 1">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+                        <div>
+                            <p>Gangster Apes</p>
+                            <p>Created by Paa3k</p>
+                        </div>
+                        <img src="Images/pharoah.jpg" alt="Profile picture" style="width: 4.5rem;height: 4.5rem; border-radius: 100px;">
+                    </div>
+                    <div class="d-flex justify-content-between current_bid">
+                        <p>Current Bid</p>
+                        <p>Ending In</p>
+                    </div>
+                    <div class="d-flex justify-content-between nft_price">
+                        <p>3.48 ETH</p>
+                        <p>10h 30m 06s</p>
+                    </div>
+                </div>
+                <div class="col-3 nft_card">
+                    <div>
+                        <img src="Images/nft2.svg" alt="NFT 2">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+                        <div>
+                            <p>Gangster Apes</p>
+                            <p>Created by Paa3k</p>
+                        </div>
+                        <img src="Images/pharoah.jpg" alt="Profile picture" style="width: 4.5rem;height: 4.5rem; border-radius: 100px;">
+                    </div>
+                    <div class="d-flex justify-content-between current_bid">
+                        <p>Current Bid</p>
+                        <p>Ending In</p>
+                    </div>
+                    <div class="d-flex justify-content-between nft_price">
+                        <p>3.48 ETH</p>
+                        <p>10h 30m 06s</p>
+                    </div>
+                </div>
+                <div class="col-3 nft_card">
+                    <div>
+                        <img src="Images/nft3.svg" alt="NFT 3">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+                        <div>
+                            <p>Gangster Apes</p>
+                            <p>Created by Paa3k</p>
+                        </div>
+                        <img src="Images/pharoah.jpg" alt="Profile picture" style="width: 4.5rem;height: 4.5rem; border-radius: 100px;">
+                    </div>
+                    <div class="d-flex justify-content-between current_bid">
+                        <p>Current Bid</p>
+                        <p>Ending In</p>
+                    </div>
+                    <div class="d-flex justify-content-between nft_price">
+                        <p>3.48 ETH</p>
+                        <p>10h 30m 06s</p>
+                    </div>
+                </div>
+                <div class="col-3 nft_card">
+                    <div>
+                        <img src="Images/nft4.svg" alt="NFT 4">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+                        <div>
+                            <p>Gangster Apes</p>
+                            <p>Created by Paa3k</p>
+                        </div>
+                        <img src="Images/pharoah.jpg" alt="Profile picture" style="width: 4.5rem;height: 4.5rem; border-radius: 100px;">
+                    </div>
+                    <div class="d-flex justify-content-between current_bid">
+                        <p>Current Bid</p>
+                        <p>Ending In</p>
+                    </div>
+                    <div class="d-flex justify-content-between nft_price">
+                        <p>3.48 ETH</p>
+                        <p>10h 30m 06s</p>
+                    </div>
+                </div>
+                <div class="col-3 nft_card">
+                    <div>
+                        <img src="Images/nft5.svg" alt="NFT 5">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+                        <div>
+                            <p>Gangster Apes</p>
+                            <p>Created by Paa3k</p>
+                        </div>
+                        <img src="Images/pharoah.jpg" alt="Profile picture" style="width: 4.5rem;height: 4.5rem; border-radius: 100px;">
+                    </div>
+                    <div class="d-flex justify-content-between current_bid">
+                        <p>Current Bid</p>
+                        <p>Ending In</p>
+                    </div>
+                    <div class="d-flex justify-content-between nft_price">
+                        <p>3.48 ETH</p>
+                        <p>10h 30m 06s</p>
+                    </div>
+                </div>
+                <div class="col-3 nft_card">
+                    <div>
+                        <img src="Images/nft6.svg" alt="NFT 6">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+                        <div>
+                            <p>Gangster Apes</p>
+                            <p>Created by Paa3k</p>
+                        </div>
+                        <img src="Images/pharoah.jpg" alt="Profile picture" style="width: 4.5rem;height: 4.5rem; border-radius: 100px;">
+                    </div>
+                    <div class="d-flex justify-content-between current_bid">
+                        <p>Current Bid</p>
+                        <p>Ending In</p>
+                    </div>
+                    <div class="d-flex justify-content-between nft_price">
+                        <p>3.48 ETH</p>
+                        <p>10h 30m 06s</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center my-3">
+                <button type="button" class="btn view_more text-light">View more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Be an NFT Creator -->
+    <div class="general_padding text-light">
+        <div class="text-center text-quicksand">
+            <p>Be An NFT Creator</p>
+            <h4 class="my-3">Create & Sell Your Own NFTs</h4>
+        </div>
+
+        <div class="nft_steps row gap-5 mt-5">
+            <div class="col text-center nft_step text-quicksand">
+                <img src="Images/create_nft.svg" alt="">
+                <h6 class="my-4">Create Artworks</h6>
+                <p class="w-75 mx-auto my-3">Create your collection and social links and more</p>
+            </div>
+
+            <div class="col text-center nft_step text-quicksand">
+                <img src="Images/upload_nft.svg" alt="">
+                <h6 class="my-4">Upload</h6>
+                <p class="w-75 mx-auto my-3">Create your collection and social links and more</p>
+            </div>
+
+            <div class="col text-center nft_step text-quicksand">
+                <img src="Images/list_nft.svg" alt="">
+                <h6 class="my-4">Listing</h6>
+                <p class="w-75 mx-auto my-3">Setup and choose between auction
+                    fixed price listing or declining listing</p>
+            </div>
+            
+        </div>
+
+
+        <div class="d-flex gap-3 justify-content-center my-5 steps_cta text-quicksand">
+            <button type="submit">Create Now</button>
+            <button class="watch_videos" type="submit">Watch Videos</button>
+        </div>
+    </div>
+
+    <!-- Nft creators  -->
+    <div class="general_padding text-light mt-5 pt-5">
+        <div class="text-center text-quicksand">
+            <p>NFT Creators</p>
+            <h4 class="my-3">Top Creators Of The Week</h4>
+        </div>
+
+        <div class="nft_creators text-quicksand row gap-3 justify-content-center my-5 py-5">
+            <div class="nft_creator d-flex align-items-center gap-3 col-3">
+                <img src="Images/mouth.jpg" alt="" style="height:100px ; width:100px">
+                <div class="me-auto">
+                    <p>Black Mamba</p>
+                    <p><i class="fa-brands fa-ethereum"></i> <span>39.006.89 ETH</span> </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis align-self-end"></i>
+                </div>
+            </div>
+
+            <div class="nft_creator d-flex align-items-center gap-3 col-3">
+                <img src="Images/mouth.jpg" alt="" style="height:100px ; width:100px">
+                <div class="me-auto">
+                    <p>Viper</p>
+                    <p><i class="fa-brands fa-ethereum"></i> <span>39.006.89 ETH</span> </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis align-self-end"></i>
+                </div>
+            </div>
+
+            <div class="nft_creator d-flex align-items-center gap-3 col-3">
+                <img src="Images/mouth.jpg" alt="" style="height:100px ; width:100px">
+                <div class="me-auto">
+                    <p>Black Mamba</p>
+                    <p><i class="fa-brands fa-ethereum"></i> <span>39.006.89 ETH</span> </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis align-self-end"></i>
+                </div>
+            </div>
+
+            <div class="nft_creator d-flex align-items-center gap-3 col-3">
+                <img src="Images/mouth.jpg" alt="" style="height:100px ; width:100px">
+                <div class="me-auto">
+                    <p>Viper</p>
+                    <p><i class="fa-brands fa-ethereum"></i> <span>39.006.89 ETH</span> </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis align-self-end"></i>
+                </div>
+            </div>
+
+            <div class="nft_creator d-flex align-items-center gap-3 col-3">
+                <img src="Images/mouth.jpg" alt="" style="height:100px ; width:100px">
+                <div class="me-auto">
+                    <p>Black Mamba</p>
+                    <p><i class="fa-brands fa-ethereum"></i> <span>39.006.89 ETH</span> </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis align-self-end"></i>
+                </div>
+            </div>
+
+            <div class="nft_creator d-flex align-items-center gap-3 col-3">
+                <img src="Images/mouth.jpg" alt="" style="height:100px ; width:100px">
+                <div class="me-auto">
+                    <p>Black Mamba</p>
+                    <p><i class="fa-brands fa-ethereum"></i> <span>54.763.09 ETH</span> </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis align-self-end"></i>
+                </div>
+            </div>
+
+            <div class="nft_creator d-flex align-items-center gap-3 col-3">
+                <img src="Images/mouth.jpg" alt="" style="height:100px ; width:100px">
+                <div class="me-auto">
+                    <p>Viper</p>
+                    <p><i class="fa-brands fa-ethereum"></i> <span>39.006.89 ETH</span> </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis align-self-end"></i>
+                </div>
+            </div>
+
+            <div class="nft_creator d-flex align-items-center gap-3 col-3">
+                <img src="Images/mouth.jpg" alt="" style="height:100px ; width:100px">
+                <div class="me-auto">
+                    <p>Black Mamba</p>
+                    <p><i class="fa-brands fa-ethereum"></i> <span>39.006.89 ETH</span> </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis align-self-end"></i>
+                </div>
+            </div>
+
+            <div class="nft_creator d-flex align-items-center gap-3 col-3">
+                <img src="Images/mouth.jpg" alt="" style="height:100px ; width:100px">
+                <div class="me-auto">
+                    <p>Black Mamba</p>
+                    <p><i class="fa-brands fa-ethereum"></i> <span>39.006.89 ETH</span> </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis align-self-end"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Join our Community section  -->
+    <div class="join_community text-center text-quicksand w-75 mx-auto text-dark">
+        <h3 class="mb-4">Join Our Community</h3>
+        <p>Meet the team, artist and collectors of platform update,annoucement and more</p>
+        <div class="my-5 d-flex justify-content-center">
+            <button type="submit">Take Me To Discord</button>
+        </div>
+    </div>
+
+
+    <!-- Footer Section  -->
+    <footer class="general_padding d-flex justify-content-between text-quicksand text-light py-5 my-3">
+        <div>
+            <div>
+                <img src="Images/logo_icon.svg" alt="QikNFT icon">
+                <span class="fs-4 text-light text-quicksand fw-bold">
+                    QikNFT
+                </span>
+            </div>
+
+            <p class="w-75 my-4">Unique NFTs Marketplace. rare and authentic digital creation</p>
+            
+            <div class="d-flex gap-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="d-flex gap-4">
+            <div>
+                <p class="fw-bold">Marketplace</p>
+                <ul class="px-0 text-dark">
+                    <li>
+                        <a href="#">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#">NFTs</a>
+                    </li>
+                    <li>
+                        <a href="#">Collectables</a>
+                    </li>
+                    <li>
+                        <a href="#">Virtual Reality</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="fw-bold">Resources</p>
+                <ul class="px-0 text-dark">
+                    <li>
+                        <a href="#">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="fw-bold">About Us</p>
+                <ul class="text-dark px-0">
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
